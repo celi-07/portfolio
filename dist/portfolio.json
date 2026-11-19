@@ -1,0 +1,515 @@
+{
+  "profile": {
+    "name": "Jason Luman",
+    "initials": "JL",
+    "role": "Mobile software engineer",
+    "location": "Jakarta, Indonesia",
+    "intro": "I build mobile apps and practical software, from everyday school tools to personal finance and productivity apps.",
+    "description": "Jason Luman is a software engineer in Jakarta building React Native apps, school systems, and practical tools for everyday work.",
+    "title": "Jason Luman | Mobile Software Engineer",
+    "cv": {
+      "label": "Download CV",
+      "url": "./assets/Jason-Luman-CV.pdf"
+    },
+    "links": [
+      {
+        "label": "Email me",
+        "url": "mailto:jasonn.lumann@gmail.com"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jason-luman/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/celi-07"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "work",
+      "title": "Personal projects",
+      "kind": "products",
+      "intro": "Two apps I built for managing finances and reusing clipboard history.",
+      "items": [
+        {
+          "id": "finance-studio",
+          "title": "Finance Studio",
+          "subtitle": "AI Integrated Web and mobile finance app",
+          "period": "",
+          "summary": "Track transactions, investments, and savings goals across personal and small-business finances.",
+          "image": {
+            "src": "./assets/work/finance-studio-demo.webp",
+            "alt": "Finance Studio overview with fictional balances and cash-flow charts",
+            "caption": "Live demo · Fictional data"
+          },
+          "stack": [
+            "Next.js",
+            "React Native",
+            "Expo",
+            "PostgreSQL",
+            "Google Gemini API"
+          ],
+          "blocks": [
+            {
+              "heading": "One database for web and mobile",
+              "paragraphs": [
+                "I built a Next.js web app and an Expo mobile app backed by a shared PostgreSQL database. Both give users a place to see the money they have, the investments they hold, and the goals they’re saving toward."
+              ]
+            },
+            {
+              "heading": "Review before saving",
+              "paragraphs": [
+                "I integrated the Google Gemini API to draft financial entries for users to review before saving. The public web demo runs in the browser with fictional balances and transactions."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Live demo",
+              "url": "https://finance-studio-ten.vercel.app/"
+            },
+            {
+              "label": "GitHub",
+              "url": "https://github.com/celi-07/finance-studio"
+            }
+          ]
+        },
+        {
+          "id": "snipmoor",
+          "title": "SnipMoor",
+          "subtitle": "Windows clipboard manager",
+          "period": "",
+          "summary": "Save, search, and reuse clipboard entries with a global keyboard shortcut.",
+          "image": {
+            "src": "./assets/work/snipmoor-poster.webp",
+            "alt": "SnipMoor’s compact Windows clipboard history panel with fictional example clips",
+            "caption": "App preview · Sample clips"
+          },
+          "stack": [
+            "Tauri",
+            "Rust",
+            "React",
+            "Cloudflare"
+          ],
+          "blocks": [
+            {
+              "heading": "Retrieve a clip while you work",
+              "paragraphs": [
+                "I built SnipMoor to make earlier clipboard entries easy to retrieve. A global shortcut opens a compact, searchable history, and the app encrypts saved clipboard entries on the device."
+              ]
+            },
+            {
+              "heading": "Desktop app and licensing",
+              "paragraphs": [
+                "I built the desktop app with Tauri and Rust and used React for the interface. I developed a separate licensing service on Cloudflare."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Product site",
+              "url": "https://snipmoor.whiteeorangee.com/"
+            },
+            {
+              "label": "Releases",
+              "url": "https://github.com/celi-07/snipmoor-releases/releases"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "career",
+      "title": "Career",
+      "kind": "timeline",
+      "intro": "I work on school apps and systems at Bina Inovasi Global, the IT division of Bina Nusantara.",
+      "items": [
+        {
+          "id": "junior-software-engineer",
+          "title": "Junior Software Engineer",
+          "subtitle": "Bina Inovasi Global · Jakarta Barat, Indonesia",
+          "period": "Mar 2025 – Present",
+          "summary": "I develop mobile tooling, maintain React Native releases, and contribute to school systems.",
+          "stack": [
+            "React Native CLI",
+            "JavaScript",
+            "Redux",
+            "Git",
+            "ASP.NET",
+            "C#",
+            "SQL",
+            "Azure DevOps",
+            "Xcode",
+            "TestFlight"
+          ],
+          "blocks": [
+            {
+              "heading": "School systems",
+              "paragraphs": [
+                "Our team developed cross-platform school systems. I contributed to synchronizing gradebooks with the learning management system, implementing a multi-tier database approval workflow, and building mobile modules for emergency attendance and digital policy enforcement."
+              ]
+            },
+            {
+              "heading": "Mobile maintenance",
+              "paragraphs": [
+                "I built in-app tools to inspect network requests and app state on the device, implemented deep-link navigation, and upgraded React Native in the existing codebase to keep dependencies stable."
+              ]
+            },
+            {
+              "heading": "iOS release engineering",
+              "paragraphs": [
+                "I improved Azure CI/CD pipelines and upgraded the macOS build environment to meet App Store SDK requirements. I managed manual production releases using Xcode and TestFlight."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "BINUS SCHOOL",
+              "url": "https://binus.sch.id/"
+            },
+            {
+              "label": "e-Desk on the App Store",
+              "url": "https://apps.apple.com/id/app/binus-school-e-desk/id1634308230"
+            },
+            {
+              "label": "e-Desk on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=id.ac.binus.school"
+            }
+          ]
+        },
+        {
+          "id": "associate-software-engineer",
+          "title": "Associate Software Engineer",
+          "subtitle": "Bina Inovasi Global · Jakarta Barat, Indonesia",
+          "period": "Mar 2024 – Feb 2025",
+          "summary": "I built React Native features for BINUS SCHOOL e-Desk and school event booking.",
+          "stack": [
+            "React Native CLI",
+            "JavaScript",
+            "Redux",
+            "Microsoft Azure",
+            "Git"
+          ],
+          "blocks": [
+            {
+              "heading": "e-Desk across five schools",
+              "paragraphs": [
+                "I worked with my team to build cross-platform modules for class schedules, electives, and score summaries in BINUS SCHOOL e-Desk. We rolled these modules out across five schools."
+              ]
+            },
+            {
+              "heading": "Event invitations and booking",
+              "paragraphs": [
+                "I implemented a centralized invitation and booking system from technical specifications. It gave parents and school staff a shared place to coordinate events and reduced manual administrative work."
+              ]
+            },
+            {
+              "heading": "Dashboard and connectivity",
+              "paragraphs": [
+                "I reworked dashboard interfaces to manage shared state with Redux and deployed a consistent offline dialog across the app’s modules."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "BINUS SCHOOL",
+              "url": "https://binus.sch.id/"
+            },
+            {
+              "label": "e-Desk on the App Store",
+              "url": "https://apps.apple.com/id/app/binus-school-e-desk/id1634308230"
+            },
+            {
+              "label": "e-Desk on Google Play",
+              "url": "https://play.google.com/store/apps/details?id=id.ac.binus.school"
+            }
+          ]
+        },
+        {
+          "id": "mandarin-tutor",
+          "title": "Mandarin Tutor",
+          "subtitle": "Hong Hua",
+          "period": "Feb – Aug 2023",
+          "summary": "I tutored Mandarin at Hong Hua before starting university.",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/jason-luman/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "kind": "timeline",
+      "intro": "My computer science degree and exchange studies.",
+      "items": [
+        {
+          "id": "xjtlu-exchange",
+          "title": "Xi’an Jiaotong-Liverpool University",
+          "subtitle": "Student Exchange Mobility Programme · Suzhou, China",
+          "period": "Mar – Jun 2026",
+          "summary": "First Class grade with an 84.5% weighted average.",
+          "blocks": [
+            {
+              "heading": "Exchange coursework",
+              "paragraphs": [
+                "I studied mathematics and computer science in Suzhou, including Modern Cryptography."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "binus-university",
+          "title": "BINUS University",
+          "subtitle": "Bachelor of Computer Science, Global Class · Tangerang, Indonesia",
+          "period": "Sep 2023 – 2027",
+          "summary": "Artificial Intelligence stream · GPA 3.92 / 4.00 · Dean’s List 2025",
+          "blocks": [
+            {
+              "heading": "Academic recognition",
+              "paragraphs": [
+                "The BINUS School of Computer Science named me to the 2025 Dean’s List for academic achievement."
+              ]
+            },
+            {
+              "heading": "Selected coursework",
+              "bullets": [
+                "Database Technology",
+                "Machine Learning",
+                "Artificial Intelligence",
+                "Software Engineering",
+                "Object-Oriented Programming",
+                "Natural Language Processing",
+                "Human–Computer Interaction"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "credentials",
+      "title": "Credentials",
+      "kind": "timeline",
+      "intro": "",
+      "items": [
+        {
+          "id": "alibaba-cloud-associate",
+          "title": "Alibaba Cloud Associate: Cloud Engineer",
+          "subtitle": "Alibaba Cloud",
+          "period": "Jun 2025",
+          "summary": "I earned the Alibaba Cloud Associate certification in cloud engineering."
+        },
+        {
+          "id": "ielts-academic",
+          "title": "IELTS Academic",
+          "subtitle": "English language assessment",
+          "period": "2025",
+          "summary": "I scored 7.5 overall on the IELTS Academic exam."
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "title": "Leadership",
+      "kind": "timeline",
+      "intro": "My university roles in student orientation and the computer club.",
+      "items": [
+        {
+          "id": "bncc-hr-staff",
+          "title": "Human Resources Department Staff",
+          "subtitle": "Bina Nusantara Computer Club · Jakarta Barat, Indonesia",
+          "period": "Sep 2024 – Oct 2025",
+          "summary": "I served on the BNCC Board of Management as Human Resources Department Staff.",
+          "blocks": [
+            {
+              "heading": "Board of Management",
+              "paragraphs": [
+                "I moved into the department’s staff role after serving as a committee member."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "freshmen-leader-and-partner",
+          "title": "Freshmen Leader & Partner",
+          "subtitle": "First Year Program · BINUS University, Tangerang, Indonesia",
+          "period": "Aug 2024 – Aug 2025",
+          "summary": "I held both Freshmen Leader and Freshmen Partner roles in the university’s First Year Program."
+        },
+        {
+          "id": "bncc-hr-committee",
+          "title": "Human Resources Department Activist",
+          "subtitle": "Bina Nusantara Computer Club · Jakarta Barat, Indonesia",
+          "period": "Oct 2023 – Sep 2024",
+          "summary": "I joined the BNCC Human Resources Department as a committee member."
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Skills & languages",
+      "kind": "skills",
+      "intro": "",
+      "items": [
+        {
+          "id": "programming-languages",
+          "title": "Programming languages",
+          "subtitle": "",
+          "period": "",
+          "summary": "JavaScript, C#, Python, SQL, C, and Rust",
+          "stack": [
+            "JavaScript",
+            "C#",
+            "Python",
+            "SQL",
+            "C",
+            "Rust"
+          ],
+          "blocks": [
+            {
+              "heading": "Where I use them",
+              "paragraphs": [
+                "I work with JavaScript on React Native apps, C# and SQL on school systems, and Rust on SnipMoor’s desktop app. My technical skill set also includes Python and C."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "frameworks-and-libraries",
+          "title": "Frameworks & libraries",
+          "subtitle": "",
+          "period": "",
+          "summary": "Mobile, web, desktop, and backend development",
+          "stack": [
+            "React Native CLI",
+            "React",
+            "ASP.NET",
+            "Redux",
+            "Tauri",
+            "Next.js",
+            "Expo"
+          ],
+          "blocks": [
+            {
+              "heading": "Where I use them",
+              "paragraphs": [
+                "I use React Native CLI and Redux on school apps, and ASP.NET for school systems. I paired Next.js with Expo in Finance Studio and used Tauri with React for SnipMoor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "databases-and-delivery",
+          "title": "Databases & delivery tools",
+          "subtitle": "",
+          "period": "",
+          "summary": "Relational databases, source control, CI/CD, and iOS releases",
+          "stack": [
+            "Microsoft Azure",
+            "Azure DevOps",
+            "Git",
+            "Xcode",
+            "TestFlight",
+            "SQL Server",
+            "MySQL",
+            "PostgreSQL",
+            "Supabase",
+            "Cloudflare"
+          ],
+          "blocks": [
+            {
+              "heading": "Where I use them",
+              "paragraphs": [
+                "I’ve worked with Azure DevOps for CI/CD and Xcode and TestFlight for iOS releases. Finance Studio shares a PostgreSQL database across web and mobile, and SnipMoor uses Cloudflare for licensing."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ai-and-machine-learning",
+          "title": "AI & machine learning",
+          "subtitle": "",
+          "period": "",
+          "summary": "TensorFlow Lite, MediaPipe, scikit-learn, pandas, and Google Gemini API",
+          "stack": [
+            "TensorFlow Lite (TFLite)",
+            "MediaPipe",
+            "scikit-learn",
+            "pandas",
+            "Google Gemini API"
+          ],
+          "blocks": [
+            {
+              "heading": "Applied AI",
+              "paragraphs": [
+                "I study artificial intelligence and machine learning at BINUS University. For Finance Studio, I integrated Gemini to draft financial entries for users to review."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "spoken-languages",
+          "title": "Spoken languages",
+          "subtitle": "",
+          "period": "",
+          "summary": "Indonesian, English, and Mandarin Chinese",
+          "blocks": [
+            {
+              "heading": "Language background",
+              "bullets": [
+                "Indonesian — native",
+                "English — fluent, IELTS Academic 7.5",
+                "Mandarin Chinese — former tutor at Hong Hua"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guide": {
+    "src": "./assets/cat.glb",
+    "poster": "./assets/cat.png",
+    "label": "Project guide",
+    "fetchLabel": "Fetch a project",
+    "projectLabel": "View project",
+    "fetchingLabel": "Fetching project"
+  },
+  "ui": {
+    "productsAction": "Read case study",
+    "detailBack": "Back to portfolio",
+    "detailStack": "Tools",
+    "detailLinks": "Links",
+    "unavailableTitle": "Portfolio entry unavailable",
+    "unavailableDescription": "Return to the portfolio to browse the available entries.",
+    "contactTitle": "Let’s talk.",
+    "contactIntro": "",
+    "nav": [
+      {
+        "label": "Projects",
+        "href": "#work"
+      },
+      {
+        "label": "Career",
+        "href": "#career"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "heroAction": "Explore my work",
+    "heroActionHref": "#work",
+    "skipLink": "Skip to content",
+    "homeLabel": "Jason Luman, home",
+    "navLabel": "Main navigation",
+    "backToTop": "Back to top",
+    "copyright": "© 2026 Jason Luman"
+  }
+}
