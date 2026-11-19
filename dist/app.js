@@ -3,6 +3,37 @@ const header = document.querySelector('#site-header');
 const footer = document.querySelector('#site-footer');
 const description = document.querySelector('meta[name="description"]');
 const detailPrefix = '#/item/';
+const toolIcons = {
+  'asp.net': 'dotnet.svg',
+  'azure devops': 'azuredevops.svg',
+  'c': 'c.svg',
+  'c#': 'csharp.svg',
+  'cloudflare': 'cloudflare.svg',
+  'expo': 'expo.svg',
+  'git': 'git.svg',
+  'google gemini api': 'googlegemini.svg',
+  'javascript': 'javascript.svg',
+  'mediapipe': 'mediapipe.svg',
+  'microsoft azure': 'azure.svg',
+  'mysql': 'mysql.svg',
+  'next.js': 'nextdotjs.svg',
+  'postgresql': 'postgresql.svg',
+  'python': 'python.svg',
+  'react': 'react.svg',
+  'react native': 'react.svg',
+  'react native cli': 'react.svg',
+  'redux': 'redux.svg',
+  'rust': 'rust.svg',
+  'sql': 'sql.svg',
+  'sql server': 'microsoftsqlserver.svg',
+  'supabase': 'supabase.svg',
+  'tauri': 'tauri.svg',
+  'tensorflow lite (tflite)': 'tensorflow.svg',
+  'testflight': 'testflight.png',
+  'xcode': 'xcode.svg',
+  'pandas': 'pandas.svg',
+  'scikit-learn': 'scikitlearn.svg'
+};
 const positions = new Map();
 let currentView;
 let currentEntry;
@@ -30,6 +61,21 @@ function add(parent, ...children) {
 
 function optional(tag, className, text) {
   return text ? node(tag, className, text) : null;
+}
+
+function toolItem(technology) {
+  const item = node('li');
+  const icon = toolIcons[technology.trim().toLowerCase()];
+  if (icon) {
+    const image = node('img', 'tool-icon');
+    image.src = './assets/tools/' + icon;
+    image.alt = '';
+    image.width = 18;
+    image.height = 18;
+    item.append(image);
+  }
+  item.append(document.createTextNode(technology));
+  return item;
 }
 
 function link(label, href, className, symbol) {
@@ -219,7 +265,7 @@ function renderDetail(record) {
     if (item.stack?.length) {
       add(sidebar, add(node('section'),
         node('h2', '', ui.detailStack ?? 'Tech stack'),
-        add(node('ul', 'stack-list'), ...item.stack.map(technology => node('li', '', technology)))));
+        add(node('ul', 'stack-list'), ...item.stack.map(toolItem))));
     }
     if (item.links?.length) {
       const links = node('ul', 'detail-links');
