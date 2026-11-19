@@ -332,9 +332,9 @@
           "summary": "I served on the BNCC Board of Management as Human Resources Department Staff.",
           "blocks": [
             {
-              "heading": "Board of Management",
+              "heading": "Talent development and member engagement",
               "paragraphs": [
-                "I moved into the department’s staff role after serving as a committee member."
+                "As an HRD Staff member, I contributed directly to talent development initiatives aimed at supporting member growth and overall engagement. I managed organizational programs that fostered a strong community environment, ensuring members were well-supported throughout their technical and professional development within the club."
               ]
             }
           ]
@@ -344,14 +344,46 @@
           "title": "Freshmen Leader & Partner",
           "subtitle": "First Year Program · BINUS University, Tangerang, Indonesia",
           "period": "Aug 2024 – Aug 2025",
-          "summary": "I held both Freshmen Leader and Freshmen Partner roles in the university’s First Year Program."
+          "summary": "I held both Freshmen Leader and Freshmen Partner roles in the university’s First Year Program.",
+          "blocks": [
+            {
+              "heading": "Freshmen Leader ? Aug?Sep 2024",
+              "paragraphs": [
+                "During the intensive First Year Program (FYP), I led and managed a dedicated team of incoming freshmen through their initial university orientation. I directed team-building activities, coordinated campus introductions, and guided my cohort through key milestones like the Inauguration Day events. I acted as the first point of contact to ensure new students felt welcomed, engaged, and fully prepared to start their academic careers."
+              ]
+            },
+            {
+              "heading": "Freshmen Partner ? Sep 2024?Aug 2025",
+              "paragraphs": [
+                "As a Freshmen Partner, I served as a primary mentor for first-year students, guiding them through their critical transition into university life. I facilitated weekly mentorship sessions throughout their first two semesters, providing actionable advice on course selection, effective study strategies, and personal development. By acting as a reliable support system, I helped new students confidently navigate their academic journey, which ultimately strengthened my own leadership, communication, and problem-solving skills."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Freshmen Leader certificate",
+              "url": "./assets/certificates/freshmen-leader-jason-luman.pdf"
+            },
+            {
+              "label": "Freshmen Partner certificate",
+              "url": "./assets/certificates/freshmen-partner-jason-luman.pdf"
+            }
+          ]
         },
         {
           "id": "bncc-hr-committee",
           "title": "Human Resources Department Activist",
           "subtitle": "Bina Nusantara Computer Club · Jakarta Barat, Indonesia",
           "period": "Oct 2023 – Sep 2024",
-          "summary": "I joined the BNCC Human Resources Department as a committee member."
+          "summary": "I joined the BNCC Human Resources Department as a committee member.",
+          "blocks": [
+            {
+              "heading": "Onboarding and community",
+              "paragraphs": [
+                "In my role as an HRD Activist, I supported the onboarding of new students by providing direct mentorship during their transition into campus life. I worked alongside fellow leaders to plan and deliver engaging orientation events and community workshops. I also led informational sessions, breaking down complex academic and extracurricular guidelines for incoming club members."
+              ]
+            }
+          ]
         }
       ]
     },
