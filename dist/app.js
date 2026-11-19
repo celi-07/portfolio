@@ -272,6 +272,11 @@ function renderDetail(record) {
       for (const itemLink of item.links) add(links, add(node('li'), action(itemLink, 'text-link')));
       add(sidebar, add(node('section'), node('h2', '', ui.detailLinks ?? 'Links'), links));
     }
+    if (item.certificates?.length) {
+      const certificates = node('ul', 'detail-certificates');
+      for (const itemCertificates of item.certificates) add(certificates, add(node('li'), action(itemCertificates, 'text-link')));
+      add(sidebar, add(node('section'), node('h2', '', ui.detailCertificates ?? 'Certificates'), certificates));
+    }
     add(article, add(node('div', 'detail-columns'), prose.childElementCount && prose, sidebar.childElementCount && sidebar));
     description.content = item.summary ?? profile.description ?? '';
   } else {

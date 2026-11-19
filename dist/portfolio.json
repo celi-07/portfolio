@@ -36,7 +36,7 @@
         {
           "id": "finance-studio",
           "title": "Finance Studio",
-          "subtitle": "AI Integrated Web and mobile finance app",
+          "subtitle": "AI Integrated Web and Mobile Finance App",
           "period": "",
           "summary": "Track transactions, investments, and savings goals across personal and small-business finances.",
           "image": {
@@ -83,8 +83,8 @@
           ],
           "links": [
             {
-              "label": "Live demo",
-              "url": "https://finance-studio-ten.vercel.app/"
+              "label": "Product site",
+              "url": "https://finance-studio.whiteeorangee.com/"
             },
             {
               "label": "GitHub",
@@ -201,15 +201,15 @@
           ],
           "links": [
             {
-              "label": "BINUS SCHOOL",
-              "url": "https://binus.sch.id/"
+              "label": "BINUS SCHOOL e-Desk",
+              "url": "https://e-desk.binus.sch.id/"
             },
             {
-              "label": "e-Desk on the App Store",
+              "label": "BINUS SCHOOL e-Desk on the App Store",
               "url": "https://apps.apple.com/id/app/binus-school-e-desk/id1634308230"
             },
             {
-              "label": "e-Desk on Google Play",
+              "label": "BINUS SCHOOL e-Desk on Google Play",
               "url": "https://play.google.com/store/apps/details?id=id.ac.binus.school"
             }
           ]
@@ -229,7 +229,7 @@
           ],
           "blocks": [
             {
-              "heading": "e-Desk across five schools",
+              "heading": "BINUS SCHOOL e-Desk across five schools",
               "paragraphs": [
                 "I worked with my team to build cross-platform modules for class schedules, electives, and score summaries in BINUS SCHOOL e-Desk. We rolled these modules out across five schools."
               ]
@@ -249,15 +249,15 @@
           ],
           "links": [
             {
-              "label": "BINUS SCHOOL",
-              "url": "https://binus.sch.id/"
+              "label": "BINUS SCHOOL e-Desk",
+              "url": "https://e-desk.binus.sch.id/"
             },
             {
-              "label": "e-Desk on the App Store",
+              "label": "BINUS SCHOOL e-Desk on the App Store",
               "url": "https://apps.apple.com/id/app/binus-school-e-desk/id1634308230"
             },
             {
-              "label": "e-Desk on Google Play",
+              "label": "BINUS SCHOOL e-Desk on Google Play",
               "url": "https://play.google.com/store/apps/details?id=id.ac.binus.school"
             }
           ]
@@ -267,11 +267,19 @@
           "title": "Mandarin Tutor",
           "subtitle": "Hong Hua",
           "period": "Feb – Aug 2023",
-          "summary": "I tutored Mandarin at Hong Hua before starting university.",
+          "summary": "I tutored Mandarin at Hong Hua during the early months of university.",
+          "blocks": [
+            {
+              "heading": "Curriculum-Aligned Mandarin Tutoring",
+              "paragraphs": [
+                "Provided targeted Mandarin tutoring to help students master their school curriculum and prepare for academic assessments. Focused on bridging knowledge gaps by reviewing specific class materials, running practice quizzes, and reinforcing challenging grammar and vocabulary. By aligning each session directly with their school syllabi, I successfully helped students catch up on missed coursework and significantly improve their exam performance."
+              ]
+            }
+          ],
           "links": [
             {
               "label": "LinkedIn",
-              "url": "https://www.linkedin.com/in/jason-luman/"
+              "url": "https://www.linkedin.com/company/hong-hua-mandarin-course-indonesia/home/"
             }
           ]
         }
@@ -334,18 +342,77 @@
       "intro": "",
       "items": [
         {
+          "id": "deans-list-2025",
+          "title": "Dean’s List 2025",
+          "subtitle": "BINUS University · School of Computer Science",
+          "period": "Dec 2025",
+          "summary": "Recognized by BINUS University for outstanding academic achievement.",
+          "blocks": [
+            {
+              "heading": "Academic recognition",
+              "paragraphs": [
+                "The School of Computer Science placed me on the 2025 Dean’s List in recognition of outstanding academic achievement in Computer Science."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "View certificate",
+              "url": "./assets/certificates/deans-list-2025-jason-luman.pdf"
+            }
+          ]
+        },
+        {
           "id": "alibaba-cloud-associate",
           "title": "Alibaba Cloud Associate: Cloud Engineer",
           "subtitle": "Alibaba Cloud",
           "period": "Jun 2025",
-          "summary": "I earned the Alibaba Cloud Associate certification in cloud engineering."
+          "summary": "I earned the Alibaba Cloud Associate certification in cloud engineering.",
+          "blocks": [
+            {
+              "heading": "Cloud engineering",
+              "paragraphs": [
+                "This associate-level certification covers foundational Alibaba Cloud knowledge for creating, configuring, and managing cloud resources.",
+                "I earned this certification in June 2025."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "View certificate",
+              "url": "./assets/certificates/alibaba-cloud-engineer-jason-luman.pdf"
+            },
+            {
+              "label": "About the certification",
+              "url": "https://edu.alibabacloud.com/certification/cloud_engineer_associate"
+            }
+          ]
         },
         {
           "id": "ielts-academic",
           "title": "IELTS Academic",
           "subtitle": "English language assessment",
-          "period": "2025",
-          "summary": "I scored 7.5 overall on the IELTS Academic exam."
+          "period": "May 2025",
+          "summary": "I scored 7.5 overall on the IELTS Academic exam.",
+          "blocks": [
+            {
+              "heading": "Academic English assessment",
+              "paragraphs": [
+                "IELTS Academic assesses English proficiency for academic study and professional contexts through listening, reading, writing, and speaking.",
+                "I achieved an overall band score of 7.5 on the IELTS Academic test in May 2025."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "View test report",
+              "url": "./assets/certificates/ielts-academic-jason-luman.pdf"
+            },
+            {
+              "label": "About IELTS Academic",
+              "url": "https://ielts.org/take-a-test/test-types/ielts-academic-test"
+            }
+          ]
         }
       ]
     },
@@ -378,25 +445,25 @@
           "summary": "I held both Freshmen Leader and Freshmen Partner roles in the university’s First Year Program.",
           "blocks": [
             {
-              "heading": "Freshmen Leader ? Aug?Sep 2024",
+              "heading": "Freshmen Leader [ August 2024 - September 2024 ]",
               "paragraphs": [
                 "During the intensive First Year Program (FYP), I led and managed a dedicated team of incoming freshmen through their initial university orientation. I directed team-building activities, coordinated campus introductions, and guided my cohort through key milestones like the Inauguration Day events. I acted as the first point of contact to ensure new students felt welcomed, engaged, and fully prepared to start their academic careers."
               ]
             },
             {
-              "heading": "Freshmen Partner ? Sep 2024?Aug 2025",
+              "heading": "Freshmen Partner [ September 2024 - August 2025 ]",
               "paragraphs": [
                 "As a Freshmen Partner, I served as a primary mentor for first-year students, guiding them through their critical transition into university life. I facilitated weekly mentorship sessions throughout their first two semesters, providing actionable advice on course selection, effective study strategies, and personal development. By acting as a reliable support system, I helped new students confidently navigate their academic journey, which ultimately strengthened my own leadership, communication, and problem-solving skills."
               ]
             }
           ],
-          "links": [
+          "certificates": [
             {
-              "label": "Freshmen Leader certificate",
+              "label": "Freshmen Leader",
               "url": "./assets/certificates/freshmen-leader-jason-luman.pdf"
             },
             {
-              "label": "Freshmen Partner certificate",
+              "label": "Freshmen Partner",
               "url": "./assets/certificates/freshmen-partner-jason-luman.pdf"
             }
           ]
@@ -442,7 +509,7 @@
             {
               "heading": "Where I use them",
               "paragraphs": [
-                "I work with JavaScript on React Native apps, C# and SQL on school systems, and Rust on SnipMoor’s desktop app. My technical skill set also includes Python and C."
+                "I work with JavaScript on React Native apps, C# and SQL on school systems, and Rust on SnipMoor’s desktop app. I also use Python and C, which I picked up at university and have continued to learn independently."
               ]
             }
           ]
@@ -493,7 +560,7 @@
             {
               "heading": "Where I use them",
               "paragraphs": [
-                "I’ve worked with Azure DevOps for CI/CD and Xcode and TestFlight for iOS releases. Finance Studio shares a PostgreSQL database across web and mobile, and SnipMoor uses Cloudflare for licensing."
+                "I’ve worked with Azure DevOps for CI/CD, and with Xcode and TestFlight for iOS releases. Finance Studio shares a PostgreSQL database across web and mobile, and SnipMoor uses Cloudflare for licensing."
               ]
             }
           ]
@@ -515,7 +582,7 @@
             {
               "heading": "Applied AI",
               "paragraphs": [
-                "I study artificial intelligence and machine learning at BINUS University. For Finance Studio, I integrated Gemini to draft financial entries for users to review."
+                "I study artificial intelligence and machine learning at BINUS University, so I'm familiar with scikit-learn, pandas, and other python libraries for machine learning. As for Tensorflow Lite (TfLite) and MediaPipe, I used them in my final thesis paper, \"Hybrid MediaPipe-GRU Architecture for Efficient BISINDO Recognition\". For Finance Studio, I integrated Gemini to draft financial entries for users to review."
               ]
             }
           ]
@@ -532,7 +599,7 @@
               "bullets": [
                 "Indonesian — native",
                 "English — fluent, IELTS Academic 7.5",
-                "Mandarin Chinese — former tutor at Hong Hua"
+                "Mandarin Chinese — fluent, former tutor at Hong Hua"
               ]
             }
           ]
@@ -553,6 +620,7 @@
     "detailBack": "Back to portfolio",
     "detailStack": "Tools",
     "detailLinks": "Links",
+    "detailCertificates": "Certificates",
     "unavailableTitle": "Portfolio entry unavailable",
     "unavailableDescription": "Return to the portfolio to browse the available entries.",
     "contactTitle": "Let’s talk.",
