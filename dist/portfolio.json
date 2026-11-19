@@ -53,15 +53,31 @@
           ],
           "blocks": [
             {
-              "heading": "One database for web and mobile",
+              "heading": "Shared financial model",
               "paragraphs": [
-                "I built a Next.js web app and an Expo mobile app backed by a shared PostgreSQL database. Both give users a place to see the money they have, the investments they hold, and the goals they’re saving toward."
+                "I built a Next.js web app and a native React Native companion with Expo. Both use Supabase Auth and the same PostgreSQL schema, so a user can sign in on either platform and access the same finance sheets. PostgreSQL row-level policies restrict users to their own records.",
+                "I ported the ledger calculations and validation to mobile so transfers, split reimbursements, investment valuations, and savings goals follow the same rules. Reporting keeps totals separate by currency and uses Asia/Jakarta dates for period boundaries."
               ]
             },
             {
-              "heading": "Review before saving",
+              "heading": "AI-assisted entry on the web",
               "paragraphs": [
-                "I integrated the Google Gemini API to draft financial entries for users to review before saving. The public web demo runs in the browser with fictional balances and transactions."
+                "The web assistant uses server-side Gemini tool calls to turn natural-language instructions and PDF statements into editable transaction drafts. The app validates the proposed fields, flags possible duplicates, and compares extracted statement totals with the draft rows before the user reviews and submits them.",
+                "The public AI demo uses a fixed fictional workspace. The mobile assistant uses a local English and Indonesian parser for draft entry and follow-up corrections."
+              ]
+            },
+            {
+              "heading": "Mobile sync and conflict handling",
+              "paragraphs": [
+                "I designed the mobile data layer for people who switch between their phone and browser. Mobile updates and deletes match the version originally opened, so a newer database change can surface as a conflict while the mobile draft stays open. A serialized write queue and stable IDs for new entries prevent overlapping saves and help retries avoid duplicate records.",
+                "Refreshes triggered by app foregrounding, reconnects, and available Realtime events share an active request. The app retains the last loaded view if a refresh fails. Demo records stay in local storage, and authentication sessions use Expo SecureStore on native devices."
+              ]
+            },
+            {
+              "heading": "Reports and verification",
+              "paragraphs": [
+                "The web app generates PDF statements for cash activity, reimbursements, and investments. The mobile companion exports A4 reports through the native share sheet. Transaction filters narrow the line items while the running balances still reflect the full reporting period.",
+                "Automated tests cover ledger calculations, stale edits and retries, session storage, and statement output."
               ]
             }
           ],
@@ -99,15 +115,30 @@
           ],
           "blocks": [
             {
-              "heading": "Retrieve a clip while you work",
+              "heading": "Windows clipboard integration",
               "paragraphs": [
-                "I built SnipMoor to make earlier clipboard entries easy to retrieve. A global shortcut opens a compact, searchable history, and the app encrypts saved clipboard entries on the device."
+                "I built the React interface in Tauri and used Rust for the Windows clipboard integration. A configurable global shortcut opens a compact picker from the current application. Users can search their history and paste several text clips together or reuse a single screenshot.",
+                "I kept clipboard capture opt-in and added capture pause and app exclusions so users can control what enters their history."
               ]
             },
             {
-              "heading": "Desktop app and licensing",
+              "heading": "Search and on-device OCR",
               "paragraphs": [
-                "I built the desktop app with Tauri and Rust and used React for the interface. I developed a separate licensing service on Cloudflare."
+                "SnipMoor indexes clip text, titles, tags, source apps, and recognized screenshot text with SQLite FTS5. Screenshots go through the Windows OCR engine on the device, so they can be searched by the words they contain.",
+                "The same library supports saved snippets, tags, expiry, and recoverable trash, so frequently used material can be organized alongside recent clips."
+              ]
+            },
+            {
+              "heading": "Encrypted storage and backups",
+              "paragraphs": [
+                "The local library uses SQLCipher, with Windows-protected keys. Portable encrypted backups let users move their library while preserving its privacy."
+              ]
+            },
+            {
+              "heading": "Licensing and desktop releases",
+              "paragraphs": [
+                "I built a separate Cloudflare Workers and D1 service for device-bound licensing and activation. The desktop client verifies signed access grants and can continue to operate offline for a limited period.",
+                "I set up a signed Tauri update flow. The release tooling produces the installer, updater signature, update manifest, and checksums. Tests cover the native clipboard and licensing service alongside browser tests for the interface."
               ]
             }
           ],
