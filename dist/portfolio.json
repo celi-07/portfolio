@@ -73,6 +73,10 @@
             {
               "label": "GitHub",
               "url": "https://github.com/celi-07/finance-studio"
+            },
+            {
+              "label": "Android tester download",
+              "url": "https://github.com/celi-07/finance-studio-mobile/releases/tag/android-preview-1"
             }
           ]
         },
