@@ -19,11 +19,11 @@ If port 8000 is already in use, stop the existing server or choose another port,
 Edit `dist/portfolio.json` and refresh the browser. The file contains these top-level fields.
 
 - `profile` holds the name, introduction, page metadata, contact links, and the CV link shown in the header and hero.
-- `sections` holds the lists in display order. The current section IDs are `work`, `career`, `education`, `credentials`, `leadership`, and `skills`. The `kind` controls the layout. Keep each item's `id` unique across the site and stable so existing detail links continue to work. For example, Finance Studio opens at `/#/item/finance-studio` and the Junior Software Engineer role opens at `/#/item/junior-software-engineer`.
+- `sections` holds the lists in display order. The current section IDs are `work`, `research`, `career`, `education`, `credentials`, `leadership`, and `skills`. The `kind` controls the layout. Keep each item's `id` unique across the site and stable so existing detail links continue to work. For example, Finance Studio opens at `/#/item/finance-studio` and the Junior Software Engineer role opens at `/#/item/junior-software-engineer`.
 - `guide` holds the cat model and poster paths and the labels for the project-fetch controls.
 - `ui` holds navigation, contact, and detail-view labels.
 
-To add a role, copy the example below into the `items` array of the `career` section. Replace the example text and keep the roles ordered from most to least recent. Product case studies live in `work`. A product item can also have an `image` with `src`, `alt`, and an optional `caption`.
+To add a role, copy the example below into the `items` array of the `career` section. Replace the example text and keep the roles ordered from most to least recent. Product case studies live in `work`. A product item can also have an `image` with `src`, `alt`, and an optional `caption`. Research entries live in `research`. Use `subtitle` for the submission status and venue, `authors` for the byline, and `links` for the manuscript and dataset.
 
 ```json
 {

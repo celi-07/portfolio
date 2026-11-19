@@ -121,6 +121,10 @@ function media(item, className, eager = false) {
   const image = node('img');
   image.src = item.image.src;
   image.alt = item.image.alt ?? '';
+  if (item.image.width && item.image.height) {
+    image.width = item.image.width;
+    image.height = item.image.height;
+  }
   image.loading = eager ? 'eager' : 'lazy';
   image.decoding = 'async';
   return add(figure, image, optional('figcaption', '', item.image.caption));
@@ -139,6 +143,29 @@ function productCard(item, ui) {
       node('h3', '', item.title),
       optional('p', 'product-summary', item.summary),
       actions));
+}
+
+function publicationCard(item) {
+  const label = 'Read summary';
+  const details = link(label, itemHref(item.id), 'button button-secondary', '→');
+  details.setAttribute('aria-label', label + ': ' + item.title);
+  const actions = add(node('div', 'publication-actions'), details);
+  for (const itemLink of item.links ?? []) {
+    const anchor = action(itemLink, 'text-link');
+    if (!anchor) continue;
+    anchor.setAttribute('aria-label', itemLink.label + ': ' + item.title);
+    actions.append(anchor);
+  }
+
+  return add(node('article', 'publication-card'),
+    add(node('div', 'publication-copy'),
+      optional('p', 'meta publication-status', item.subtitle),
+      node('h3', '', item.title),
+      optional('p', 'publication-authors', item.authors),
+      optional('p', 'publication-summary', item.summary),
+      item.stack?.length && add(node('ul', 'stack-list'), ...item.stack.map(toolItem)),
+      actions),
+    media(item, 'publication-media'));
 }
 
 function timelineRow(item) {
@@ -178,6 +205,8 @@ function renderSection(section, aliases) {
   add(element, add(node('div', 'section-heading'), heading, optional('p', '', section.intro)));
   if (section.kind === 'products') {
     element.append(add(node('div', 'product-grid'), ...section.items.map(item => productCard(item, ui))));
+  } else if (section.kind === 'publications') {
+    element.append(add(node('div', 'publication-list'), ...section.items.map(publicationCard)));
   } else if (section.kind === 'skills') {
     element.append(add(node('ul', 'skills-list'), ...section.items.map(skillCard)));
   } else {
@@ -249,9 +278,11 @@ function renderDetail(record) {
     const { item, section } = record;
     title = node('h1', '', item.title);
     const badges = node('p', 'meta detail-meta', [item.subtitle, item.period].filter(Boolean).join(' · '));
+    if (section.kind === 'publications') article.classList.add('publication-detail');
     add(article,
       backLink(ui.detailBack, sectionHref(section)),
-      add(node('header', 'detail-header'), badges, title, optional('p', 'detail-summary', item.summary)));
+      add(node('header', 'detail-header'),
+        badges, title, optional('p', 'publication-authors', item.authors), optional('p', 'detail-summary', item.summary)));
     if (section.kind === 'products') add(article, media(item, 'detail-media', true));
 
     const prose = node('div', 'detail-prose');

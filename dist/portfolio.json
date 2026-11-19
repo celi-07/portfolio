@@ -156,6 +156,94 @@
       ]
     },
     {
+      "id": "research",
+      "title": "Research & Publications",
+      "kind": "publications",
+      "intro": "My research on making Indonesian Sign Language (BISINDO) recognition practical on devices with limited computing power.",
+      "items": [
+        {
+          "id": "bisindo-mediapipe-gru",
+          "title": "Hybrid MediaPipe-GRU Architecture for Efficient BISINDO Recognition Integrating Non-Manual Markers in Low-Resource Environments",
+          "subtitle": "Under review · JOIV",
+          "authors": "Muhammad Anang Ayman Ramadhana, Nicholas Ho, Jason Luman, Rhio Sutoyo",
+          "summary": "We propose a lightweight model that recognizes BISINDO signs using hand movements, body pose, and facial cues. It is designed to run offline on devices with limited resources.",
+          "image": {
+            "src": "./assets/research/bisindo-mediapipe-gru.webp",
+            "alt": "",
+            "width": 430,
+            "height": 557
+          },
+          "stack": [
+            "MediaPipe",
+            "GRU",
+            "TensorFlow Lite (TFLite)"
+          ],
+          "blocks": [
+            {
+              "heading": "Recognizing signs and facial cues",
+              "paragraphs": [
+                "We use MediaPipe to extract hand, pose, and facial landmarks from video. A gated recurrent unit (GRU) network uses those sequences to classify isolated signs across a vocabulary of 40 BISINDO words."
+              ]
+            },
+            {
+              "heading": "Designing for offline use",
+              "paragraphs": [
+                "The approach uses landmark coordinates as model inputs and targets on-device inference. The evaluation plan covers classification performance, model size, and inference latency on hardware with limited resources."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Manuscript PDF",
+              "url": "./assets/research/bisindo-mediapipe-gru.pdf"
+            }
+          ]
+        },
+        {
+          "id": "bisindo-landmark-dataset",
+          "title": "Multimodal Skeletal and Facial Landmark Dataset for Indonesian Sign Language (BISINDO) Non-Manual Marker Recognition",
+          "subtitle": "Under review · Data in Brief",
+          "authors": "Jason Luman, Muhammad Anang Ayman Ramadhana, Nicholas Ho, Rhio Sutoyo",
+          "summary": "We extracted hand, pose, and facial landmarks from 2,400 BISINDO videos covering 40 words. The dataset supports research on recognizing both hand gestures and facial cues.",
+          "image": {
+            "src": "./assets/research/bisindo-landmark-dataset.webp",
+            "alt": "",
+            "width": 430,
+            "height": 609
+          },
+          "stack": [
+            "MediaPipe",
+            "NumPy",
+            "Gesture recognition"
+          ],
+          "blocks": [
+            {
+              "heading": "Vocabulary and capture",
+              "paragraphs": [
+                "The dataset contains 60 recordings for each of 40 words. Twenty words emphasize non-manual signals such as facial expressions, and twenty represent standard manual signs. We recorded with consumer webcams in everyday lighting and backgrounds."
+              ]
+            },
+            {
+              "heading": "Data format",
+              "paragraphs": [
+                "Each sample uses 149 three-dimensional landmarks per frame: 33 for pose, 42 for the hands, and 74 for the face. We normalized the coordinates relative to the shoulders and standardized each sequence to 30 frames. The processed samples are available as NumPy arrays on Mendeley Data."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Manuscript PDF",
+              "url": "./assets/research/bisindo-landmark-dataset.pdf"
+            },
+            {
+              "label": "View dataset",
+              "url": "https://data.mendeley.com/datasets/yzhzkzbnmw/3"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "career",
       "title": "Career",
       "kind": "timeline",
@@ -629,6 +717,10 @@
       {
         "label": "Projects",
         "href": "#work"
+      },
+      {
+        "label": "Research",
+        "href": "#research"
       },
       {
         "label": "Career",
